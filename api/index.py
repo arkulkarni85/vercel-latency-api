@@ -71,7 +71,7 @@ def get_value(record, keys):
     return None
 
 
-@app.post("/")
+@app.post("/api")
 def analytics(request: AnalyticsRequest):
     try:
         records = get_records(telemetry)
